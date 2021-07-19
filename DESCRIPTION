@@ -1,0 +1,27 @@
+Package: nsedf
+Type: Package
+Title: Non-Standard Evaluation Tibble
+Version: 0.1.0
+Authors@R: 
+    person(given = "Justin",
+           family = "Landis",
+           role = c("aut", "cre"),
+           email = "jtlandis314@gmail.com")
+Maintainer: Justin Landis <jtlandis314@gmail.com>
+Description: A very simple extension to the data.frame object class that
+  allows for NSE (non-standard evaluation) on the `i` and `j` arguments
+  of the `[` subset method.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+LazyData: true
+Imports:
+  rlang,
+  tidyselect
+Suggests:
+  tibble,
+  testthat (>= 3.0.3),
+  knitr,
+  rmarkdown
